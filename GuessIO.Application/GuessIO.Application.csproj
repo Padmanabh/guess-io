@@ -1,8 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net6.0-windows</TargetFramework>
+        <TargetFramework>net8.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
         <ApplicationIcon>Resources\guess_io_multi.ico</ApplicationIcon>
@@ -12,7 +12,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
         <PackageReference Include="Russkyc.AttachedUtilities.FilestreamExtensions" Version="1.1.1" />
         <PackageReference Include="Russkyc.ModernControls.WPF" Version="1.5.1" />
     </ItemGroup>
@@ -24,14 +24,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Reference Include="Russkyc.ModernControls.WPF">
-        <HintPath>..\..\..\.nuget\packages\russkyc.moderncontrols.wpf\1.5.0\lib\net6.0-windows7.0\Russkyc.ModernControls.WPF.dll</HintPath>
-      </Reference>
-    </ItemGroup>
-
-    <ItemGroup>
       <None Remove="Resources\guess_io_multi.ico" />
       <Resource Include="Resources\guess_io_multi.ico" />
     </ItemGroup>
 
 </Project>
+
